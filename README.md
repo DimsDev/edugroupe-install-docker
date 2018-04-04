@@ -1,1 +1,1 @@
-# install-docker-openshift# edugroupe-install-docker
+# edugroupe-install-docker
