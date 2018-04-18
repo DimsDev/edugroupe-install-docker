@@ -4,6 +4,5 @@
   roles:
     - {role: sysdev.docker-fedora, when: ansible_distribution == "Fedora" }
     - {role: sysdev.docker-centos, when: ansible_distribution == "CentOS" }
-    #- {role: sysdev.ansible-ubuntu, when: ansible_distribution == "Ubuntu" }
-    #- sysdev.openshift
+    - sysdev.openshift
 ...

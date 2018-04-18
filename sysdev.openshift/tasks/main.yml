@@ -10,6 +10,9 @@
   shell: mv k* o* /usr/local/sbin/
   args:
     chdir: /tmp/openshift-origin-server-v3.7.0-7ed6862-linux-64bit
-- name: start cluster
-  shell: /usr/local/sbin/oc cluster up --public-hostname={{ inventory_hostname }}
+- name: get public ip address
+  shell: curl ipecho.net/plain
+  register:  ip_pub 
+#- name: start cluster
+#  shell: /usr/local/sbin/oc cluster up --public-hostname={{ ip_pub }} --host-data-dir=/home/centos/opens_data --use-existing-config
 
